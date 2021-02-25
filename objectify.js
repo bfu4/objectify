@@ -2,7 +2,8 @@ import * as fs from 'fs';
 
 // The sources and the name of the module from CONTENT ROOT
 const buildModules = [
-    { name: "hello", sources: [ "src/cpp/hello.cc" ] }
+    { name: "hello", sources: [ "src/cpp/simple-hello/hello.cc" ] },
+ // TODO:   { name: "executable", sources: [ "src/cpp/executable/exec.cc", "src/cpp/nested/exec_impl.h" ] }
 ]
 
 // Global Include directories
