@@ -31,6 +31,8 @@ buildModules.forEach(mod => {
 
 json += '] }';
 
+json = JSON.stringify(JSON.parse(json), null, 2);
+
 // Write to GLOBAL binding.gyp
 fs.writeFileSync('binding.gyp', json);
 
