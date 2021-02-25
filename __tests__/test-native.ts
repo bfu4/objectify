@@ -1,3 +1,9 @@
-import { addon } from "../src";
+import { binaryFrom } from "../src";
 
-test("Greeting", () => console.log(addon.showcaseNodeGypImpl()))
+test("Fail Unknown Binary", () => {
+    expect(binaryFrom('nothing')).toBeNull();
+})
+
+test("Pass Found Binary", () => {
+    expect(binaryFrom('hello')).toBeDefined();
+})

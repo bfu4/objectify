@@ -1,2 +1,8 @@
-const bindings = require('bindings')
-export const addon = bindings('hello')
+import { LOG, ERR, binaryFrom } from "./util/util";
+
+export {
+    LOG,
+    ERR,
+
+    binaryFrom
+};
