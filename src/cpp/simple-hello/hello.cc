@@ -3,7 +3,9 @@
 
 Napi::Value Method(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
-  // cout showing up in the console lets us know that we can print to the console from c++, and most likely so much more..
+  // cout showing up in the console lets us know that we can
+  // print to the console from c++ (as expected)
+  // and make the assumption we can most likely do so much more..
   std::cout << "Invoking hello.cc#L7" << "\n";
   return Napi::String::New(env, "meow!");
 }
